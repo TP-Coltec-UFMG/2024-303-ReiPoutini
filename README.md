@@ -9,7 +9,7 @@ A tela inicial de nosso jogo é um menu simples, que possui o ambiente passando 
 
 Temos 3 opções de clicks:
 
-Jogar -> começa o jogo (uau)
-Opções -> Mostra as opções
-Sair -> Fecha o jogo
+- Jogar -> começa o jogo (uau)
+- Opções -> Mostra as opções
+- Sair -> Fecha o jogo
 [!]
