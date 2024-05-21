@@ -13,7 +13,7 @@ Temos 3 opções de clicks:
 - Opções: Mostra as opções
 - Sair: Fecha o jogo
   
-[!(Link imagem aqui)]
+![Tela Inicial](https://drive.google.com/file/d/1pC-BluVaml0jdje6obeQ6SDIrjV8ngfV/view?usp=sharing)
 
 ### Menu Opções:
 
