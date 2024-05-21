@@ -1,9 +1,9 @@
 # 2024-303-ReiPoutini
-Narrativa:
+### Narrativa:
 
   Nossa história se baseia no conto de “Tamāhua”. Nesse jogo, você joga como Tamāhua, um herói que deve resgatar sua esposa que foi raptada por um monstro taniwha, chamado Poutini. Tamāhua deverá viajar a canoa por várias ilhas diferentes em busca de sua esposa, derrotando vários monstros e desafios em cada ilha
 
-Tela inicial:
+### Tela inicial:
 
   A tela inicial de nosso jogo é um menu simples, que possui o ambiente passando atrás em loop.
 
@@ -15,7 +15,7 @@ Temos 3 opções de clicks:
   
 [!(Link imagem aqui)]
 
-Menu Opções:
+### Menu Opções:
 
   No menu Opções temos como modificar o volume, a sensibilidade, e a desativação ou ativação do filtro CRT.
 
