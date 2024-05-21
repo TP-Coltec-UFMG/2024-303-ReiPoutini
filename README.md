@@ -17,10 +17,10 @@ Temos 3 opções de clicks:
 
 ### Menu Opções:
 
-  No menu Opções temos como modificar o volume, a sensibilidade, e a desativação ou ativação do filtro CRT.
+  No menu Opções temos como modificar o volume (música e efeito sonoro) e a desativação ou ativação do filtro CRT.
 
-- Volume: Muda volume no geral
-- Sensibilidade: Muda a sensibilidade do controle
-- Filtro CRT: Botão ativação e desativação
+- Música: Muda volume de música.
+- Efeito sonoro: Muda volume dos efeitos sonoros
+- Filtro CRT: Botão ativação e desativação dos filtros
 
 [!(Link imagem aqui)]
