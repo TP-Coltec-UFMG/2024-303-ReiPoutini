@@ -13,7 +13,7 @@ Temos 3 opções de clicks:
 - Opções: Mostra as opções
 - Sair: Fecha o jogo
   
-![Tela Inicial](https://imgur.com/EOe0bVA)
+![Tela Inicial](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Captura%20de%20tela%202024-05-21%20193411.png)
 
 ### Menu Opções:
 
