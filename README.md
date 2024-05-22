@@ -23,4 +23,4 @@ Temos 3 opções de clicks:
 - Efeito sonoro: Muda volume dos efeitos sonoros
 - Filtro CRT: Botão ativação e desativação dos filtros
 
-[!(Link imagem aqui)]
+![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Captura%20de%20tela%202024-05-21%20232437.png)
