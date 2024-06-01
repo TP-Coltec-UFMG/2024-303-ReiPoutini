@@ -1,7 +1,15 @@
 # 2024-303-ReiPoutini
+#### Equipe: Lukas Amorim e Miguel Freitas Inácio Silva
+
+___
+
 ### Narrativa:
 
-  Nossa história se baseia no conto de “Tamāhua”. Nesse jogo, você joga como Tamāhua, um herói que deve resgatar sua esposa que foi raptada por um monstro taniwha, chamado Poutini. Tamāhua deverá viajar a canoa por várias ilhas diferentes em busca de sua esposa, derrotando vários monstros e desafios em cada ilha
+  Nossa história se baseia no conto de “Tamāhua”. Nesse jogo, você joga como Tamāhua, um herói que deve resgatar sua esposa que foi raptada por um monstro taniwha, chamado Poutini. Tamāhua deverá viajar a canoa por várias ilhas diferentes em busca de sua esposa, derrotando vários monstros e desafios em cada ilha.
+
+
+
+___
 
 ### Tela inicial:
 
