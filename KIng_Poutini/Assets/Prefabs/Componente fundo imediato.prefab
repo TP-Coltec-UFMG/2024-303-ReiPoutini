@@ -127,8 +127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63839f053f64a6549b12cca99f5897d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pastaComSprites: Background/Imediato/Background Imediato
-  numeroSprites: 4
+  Sprites:
+  - {fileID: 21300000, guid: 0582e7c265cc48d4185659032dba9782, type: 3}
+  - {fileID: 21300000, guid: 07bd1bc1fc0c4b84c90659d98524c82a, type: 3}
+  - {fileID: 21300000, guid: 8bfa0f041edf6a240b88d8f9060ee2aa, type: 3}
+  - {fileID: 21300000, guid: b2b0a44081c0bd94694fc1b20972e89f, type: 3}
 --- !u!114 &5186709526955321062
 MonoBehaviour:
   m_ObjectHideFlags: 0

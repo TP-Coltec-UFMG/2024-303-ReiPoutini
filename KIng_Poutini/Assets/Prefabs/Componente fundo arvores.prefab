@@ -127,8 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63839f053f64a6549b12cca99f5897d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pastaComSprites: Background/Arvores/Background Arvores
-  numeroSprites: 3
+  Sprites:
+  - {fileID: 21300000, guid: 9869da11b54758a4796342469288583e, type: 3}
+  - {fileID: 21300000, guid: f6e39c9de0d33d84abfff48a990a35d8, type: 3}
+  - {fileID: 21300000, guid: 562062fdb53b1994d95217276f7fb4ce, type: 3}
 --- !u!114 &2396103629202287502
 MonoBehaviour:
   m_ObjectHideFlags: 0
