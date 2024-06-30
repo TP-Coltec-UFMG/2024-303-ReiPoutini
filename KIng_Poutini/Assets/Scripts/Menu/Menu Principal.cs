@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using TMPro;
+using System.Linq;
 
 public class MenuPrincipal : MonoBehaviour {
     
@@ -18,7 +19,7 @@ public class MenuPrincipal : MonoBehaviour {
     [SerializeField] private List<Selectable> Botoes_opcoes;
     [SerializeField] private List<Selectable> Botoes_jogar;
     
-    [SerializeField]private int totalDeFases = 20;
+    [SerializeField] private int totalDeFases = 16;
     private int vidasIniciais = 6;
 
     private int BotaoAtual = 0;
@@ -102,10 +103,19 @@ public class MenuPrincipal : MonoBehaviour {
 
     public void NovoJogo() {
         LimparDados();
-        DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidasIniciais);
+
+        fasesCompletadas = 1;
+        vidas = vidasIniciais;
+        int numeroDeColecionaveis = 16;
+        List<bool> colecionaveis = new List<bool>(new bool[numeroDeColecionaveis]);
+
+        DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidasIniciais, colecionaveis);
+        Debug.Log("Fases completadas: " + dados.fasesCompletadas);
         SistemadeSave.SalvarDados(dados);
+
         SceneManager.LoadScene("Fase1");
     }
+
 
     public void CarregarJogo() {
         DadosDoJogo dados = SistemadeSave.pegardados();
@@ -117,7 +127,6 @@ public class MenuPrincipal : MonoBehaviour {
             Debug.Log("Nenhum jogo salvo encontrado");
         }
     }
-
 
     private void CarregarProgresso() {
         DadosDoJogo dados = SistemadeSave.pegardados();
@@ -132,20 +141,30 @@ public class MenuPrincipal : MonoBehaviour {
     }
 
     private int CalcularProgresso() {
-        return (int)((float)fasesCompletadas / totalDeFases * 100);
+        DadosDoJogo dados = SistemadeSave.pegardados();
+        if (dados != null) {
+            int totalColecionaveis = 12; // Ajuste conforme necessário
+            int coletados = dados.colecionaveisColetados.Count(c => c); // Conta o número de verdadeiros
+            return (int)((float)(fasesCompletadas + coletados) / (totalDeFases + totalColecionaveis) * 100);
+        } else {
+            return 0;
+        }
     }
 
     private void LimparDados() {
-        string path = Application.persistentDataPath + "/saveData.data";
+        string path = Application.persistentDataPath + "/save.dat";
         if (File.Exists(path)) {
             try {
-                File.Delete(path);
+                File.Delete(path); // Deleta o arquivo de dados salvo
                 PlayerPrefs.SetInt("FasesCompletadas", 0);
-                PlayerPrefs.Save();
+                PlayerPrefs.Save(); // Salva as mudanças no PlayerPrefs
+                PlayerPrefs.SetInt("FaseAtual", 1);
+                PlayerPrefs.Save(); // Salvar as mudanças feitas nos PlayerPrefs
                 Debug.Log("Dados limpos com sucesso");
             } catch (IOException e) {
-                Debug.LogError("Erro ao limpar dados: " + e.Message);
+                Debug.Log("Erro ao limpar dados");
             }
         }
     }
+
 }

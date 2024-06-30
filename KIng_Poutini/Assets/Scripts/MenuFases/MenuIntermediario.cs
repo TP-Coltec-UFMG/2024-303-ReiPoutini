@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class MenuIntermediario : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI nomeFaseText;
     [SerializeField] private Image ilhaImage;
+    [SerializeField] private Image colecionavelImage;
     [SerializeField] private GameObject Selecao;
     public Button botaoJogar;
     public Button botaoVoltar;
@@ -14,10 +15,25 @@ public class MenuIntermediario : MonoBehaviour {
     private int botaoAtual = 0;
     private Button[] botoes;
 
-    public void ConfigurarMenu(string nomeFase, Sprite spriteIlha, UnityAction jogarCallback, UnityAction voltarCallback) {
+    private Animator colecionavelAnimator;
+    private static readonly int AtivarRotacao = Animator.StringToHash("Ativarotacao");
+
+    private void Awake() {
+        colecionavelAnimator = colecionavelImage.GetComponent<Animator>();
+    }
+
+    public void ConfigurarMenu(string nomeFase, Sprite spriteIlha, bool colecionavelPego, Sprite spriteColecionavel, UnityAction jogarCallback, UnityAction voltarCallback) {
         nomeFaseText.text = nomeFase;
         ilhaImage.sprite = spriteIlha;
         
+        if (colecionavelPego) {
+            colecionavelImage.sprite = spriteColecionavel;
+            colecionavelAnimator.SetTrigger(AtivarRotacao);
+        } else {
+            colecionavelImage.sprite = null;
+            colecionavelAnimator.ResetTrigger(AtivarRotacao);
+        }
+
         botaoJogar.onClick.RemoveAllListeners();
         botaoVoltar.onClick.RemoveAllListeners();
 
@@ -27,6 +43,7 @@ public class MenuIntermediario : MonoBehaviour {
         botoes = new Button[] { botaoJogar, botaoVoltar };
         SelectButton(botaoAtual);
     }
+
 
     private void Update() {
         if (gameObject.activeSelf) {

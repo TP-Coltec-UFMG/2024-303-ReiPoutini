@@ -13,6 +13,7 @@ public class GerenciarFases : MonoBehaviour {
     [SerializeField] private GameObject personagem;
     [SerializeField] private float velocidadeMovimento = 2f;
     [SerializeField] private MenuIntermediario[] menusIntermediarios;
+    [SerializeField] private List<Sprite> spritesColecionaveis;
 
     private Animator animador;
     private SpriteRenderer spriteRenderer;
@@ -23,6 +24,7 @@ public class GerenciarFases : MonoBehaviour {
     private int andandoHash = Animator.StringToHash("Andando");
     private bool menuIntermediarioAtivo = false;
     private bool inputLocked = false;
+    private List<bool> colecionaveisColetados = new List<bool>();
 
     void Start() {
         CarregarProgresso();
@@ -53,7 +55,7 @@ public class GerenciarFases : MonoBehaviour {
             } else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
                 MoverParaFase(faseAtual - 1);
             } else if (Input.GetKeyDown(KeyCode.Return)) {
-                    AbrirMenuIntermediario(faseAtual);
+                AbrirMenuIntermediario(faseAtual);
             }
         }
     }
@@ -87,12 +89,25 @@ public class GerenciarFases : MonoBehaviour {
     }
 
     public void AbrirMenuIntermediario(int numFase) {
+        if (numFase < 0 || numFase >= colecionaveisColetados.Count) {
+            Debug.LogError("Índice numFase fora dos limites: " + numFase);
+            return;
+        }
+
         if (numFase > faseAtual + 1) {
             return;
         }
-        
+
         faseAtual = Mathf.Max(numFase - 1, faseAtual);
-        menusIntermediarios[faseAtual].ConfigurarMenu("Fase " + (numFase + 1), spritesCompletos[numFase], () => CarregarFase(numFase + 1), FecharMenuIntermediario);
+  
+        if (numFase >= spritesCompletos.Count || numFase >= spritesColecionaveis.Count) {
+            Debug.LogError("Índice numFase fora dos limites para sprites: " + numFase);
+            return;
+        }
+
+        bool colecionavelPego = colecionaveisColetados[numFase + 1];
+        menusIntermediarios[faseAtual].ConfigurarMenu("Fase " + (numFase + 1), spritesCompletos[numFase], colecionavelPego, spritesColecionaveis[numFase], () => CarregarFase(numFase + 1), FecharMenuIntermediario);
+        Debug.Log("Colecionavel:");
         menusIntermediarios[faseAtual].Mostrar();
         DesativarSelecaoFases();
         menuIntermediarioAtivo = true;
@@ -109,6 +124,11 @@ public class GerenciarFases : MonoBehaviour {
     }
 
     public void CarregarFase(int numFase) {
+        if (numFase < 1 || numFase > botaoFase.Length) {
+            Debug.LogError("Índice numFase fora dos limites para carregamento: " + numFase);
+            return;
+        }
+
         if (numFase > faseAtual + 1) {
             return;
         }
@@ -136,16 +156,22 @@ public class GerenciarFases : MonoBehaviour {
         if (dados != null) {
             fasesCompletadas = dados.fasesCompletadas;
             vidas = dados.vidas;
+            colecionaveisColetados = dados.colecionaveisColetados;
+            
+            if (colecionaveisColetados.Count < botaoFase.Length) {
+                colecionaveisColetados.AddRange(new bool[botaoFase.Length - colecionaveisColetados.Count]);
+            }
         } else {
             fasesCompletadas = 2;
             vidas = 6;
+            colecionaveisColetados = new List<bool>(new bool[botaoFase.Length]);
         }
         faseAtual = fasesCompletadas - 1;
     }
 
     public void SalvarProgresso() {
         try {
-            DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidas);
+            DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidas, colecionaveisColetados);
             SistemadeSave.SalvarDados(dados);
             PlayerPrefs.SetInt("FasesCompletadas", fasesCompletadas);
             PlayerPrefs.SetInt("Vidas", vidas);

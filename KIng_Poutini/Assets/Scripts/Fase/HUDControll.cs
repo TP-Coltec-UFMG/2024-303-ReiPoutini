@@ -19,11 +19,6 @@ public class HUDControl : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI vidasText; 
     public Image personagemImagem;
 
-
-    // Itens colecionaveis
-    public GameObject Colecionavel;
-    public bool ColOn;
-
     private void Awake() {
         if (HControl == null) {
             HControl = this;
@@ -33,11 +28,6 @@ public class HUDControl : MonoBehaviour {
 
         jogador = FindObjectOfType<Jogador>();
         AtualizarVidas();
-    }
-
-    public void AtivarColecionavel() {
-        Colecionavel.SetActive(true);
-        ColOn = true;
     }
 
     public void PerderVida() {
@@ -56,6 +46,7 @@ public class HUDControl : MonoBehaviour {
     public void AumentarVidas(){
         jogador.vidas++;
         AtualizarVidas();
+        jogador.SalvarProgresso();
     }
 
     private void Morto() {

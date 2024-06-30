@@ -6,9 +6,11 @@ using UnityEngine;
 public class DadosDoJogo {
     public int fasesCompletadas;
     public int vidas;
+    public List<bool> colecionaveisColetados;
 
-    public DadosDoJogo(int fasesCompletadas, int vidas){
+    public DadosDoJogo(int fasesCompletadas, int vidas, List<bool> colecionaveisColetados) {
         this.fasesCompletadas = fasesCompletadas;
         this.vidas = vidas;
+        this.colecionaveisColetados = colecionaveisColetados;
     }
 }

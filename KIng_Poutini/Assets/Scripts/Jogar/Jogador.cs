@@ -185,6 +185,7 @@ public class Jogador : MonoBehaviour {
             BlockInput = true;
             velocidadeInicial = 0;
             GetComponent<Collider2D>().enabled = false;
+            SalvarProgresso();
         } else {
             SalvarProgresso();
             Reviver();
@@ -215,11 +216,13 @@ public class Jogador : MonoBehaviour {
         return invencivel;
     }
 
-    private void SalvarProgresso() {
-        DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidas);
+    public void SalvarProgresso() {
+        DadosDoJogo dados = SistemadeSave.pegardados();
+        List<bool> colecionaveisColetados = dados != null ? dados.colecionaveisColetados : new List<bool>();
+        dados = new DadosDoJogo(fasesCompletadas, vidas, colecionaveisColetados);
         SistemadeSave.SalvarDados(dados);
     }
-    
+
     private void CarregarProgresso() {
         DadosDoJogo dados = SistemadeSave.pegardados();
         if (dados != null) {
