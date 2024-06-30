@@ -27,6 +27,7 @@ public class Jogador : MonoBehaviour {
     [SerializeField] private bool Ataque;
     public bool AtaqueDuplo, AtaqueTriplo, AtaqueQuadruplo, LockeAtaque = false;
     public bool EmAtaque = false;
+    public BoxCollider2D Detecta;
     public event Action OnPlayerJump;
 
     private int andandoHash = Animator.StringToHash("andando");
@@ -91,6 +92,9 @@ public class Jogador : MonoBehaviour {
                     animador.SetTrigger(ataqueHash1);
                 }else if(!estaChao){
                     animador.SetTrigger(ataquepuloHash);
+                    if(DetectaInimigo.DetectarInimigo){
+                        animador.SetTrigger("Detecta");
+                    }
                 }
                 if(AtaqueDuplo == true && AtaqueTriplo == false && AtaqueQuadruplo == false){
                     animador.SetTrigger(ataqueHash2);
@@ -126,9 +130,11 @@ public class Jogador : MonoBehaviour {
             if (horizontalInput > 0) {
                 spriteRenderer.flipX = false;
                 jogadorCollider.offset = new Vector2(-0.25f, -0.03f);
+                Detecta.offset = new Vector2();
             } else if (horizontalInput < 0) {
                 spriteRenderer.flipX = true;
                 jogadorCollider.offset = new Vector2(0.25f, -0.03f);
+                Detecta.offset = new Vector2();
             }
         }
     }
