@@ -18,6 +18,5 @@ public class ItemRandom : MonoBehaviour{
             Instantiate(item, gameObject.transform.position,transform.rotation);
         }
 
-
     }
 }

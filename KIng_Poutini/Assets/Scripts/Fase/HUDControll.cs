@@ -2,19 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HUDControl : MonoBehaviour {
     public static HUDControl HControl { get; private set; }
     private Jogador jogador;
 
-    // Vida do Personagem
+    // HP do Personagem
     [SerializeField] private int vida;
     [SerializeField] private int vidaMaxima;
     public Image[] frutapao;
     public Sprite cheio;
     public Color vazio;
 
-    // Itens colecionáveis
+    // Vida total
+    [SerializeField] private TextMeshProUGUI vidasText; 
+    public Image personagemImagem;
+
+
+    // Itens colecionaveis
     public GameObject Colecionavel;
     public bool ColOn;
 
@@ -26,6 +32,7 @@ public class HUDControl : MonoBehaviour {
         }
 
         jogador = FindObjectOfType<Jogador>();
+        AtualizarVidas();
     }
 
     public void AtivarColecionavel() {
@@ -42,6 +49,15 @@ public class HUDControl : MonoBehaviour {
         }
     }
 
+    public void AtualizarVidas() {
+        vidasText.text = "X" + jogador.vidas;
+    }
+
+    public void AumentarVidas(){
+        jogador.vidas++;
+        AtualizarVidas();
+    }
+
     private void Morto() {
         jogador.Morte();
     }
@@ -51,7 +67,7 @@ public class HUDControl : MonoBehaviour {
         AtualizarVida();
     }
 
-    private void AtualizarVida() {
+    public void AtualizarVida() {
         if (vida > vidaMaxima) {
             vida = vidaMaxima;
         }
@@ -66,6 +82,11 @@ public class HUDControl : MonoBehaviour {
                 frutapao[i].enabled = i < vidaMaxima;
             }
         }
+    }
+
+    public void RestauraVida() {
+        vida = vidaMaxima;
+        AtualizarVida();
     }
 
     public int Vida() {

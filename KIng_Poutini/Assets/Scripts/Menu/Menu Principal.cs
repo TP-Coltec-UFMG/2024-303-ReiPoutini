@@ -19,10 +19,12 @@ public class MenuPrincipal : MonoBehaviour {
     [SerializeField] private List<Selectable> Botoes_jogar;
     
     [SerializeField]private int totalDeFases = 20;
+    private int vidasIniciais = 6;
 
     private int BotaoAtual = 0;
     private List<Selectable> Botoes;
-    private int fasesCompletadas = 0;
+    private int fasesCompletadas = 1;
+    private int vidas = 6;
     
 
     private void Awake() {
@@ -100,25 +102,28 @@ public class MenuPrincipal : MonoBehaviour {
 
     public void NovoJogo() {
         LimparDados();
-        SceneManager.LoadScene("Tutorial");
+        DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidasIniciais);
+        SistemadeSave.SalvarDados(dados);
+        SceneManager.LoadScene("Fase1");
     }
 
     public void CarregarJogo() {
         DadosDoJogo dados = SistemadeSave.pegardados();
         if (dados != null) {
-            fasesCompletadas = dados.fasesCompletadas;
-            PlayerPrefs.SetInt("FasesCompletadas", fasesCompletadas);
-            Debug.Log("Jogo carregado com progresso: " + CalcularProgresso() + "%");
+            PlayerPrefs.SetInt("FasesCompletadas", dados.fasesCompletadas);
+            Debug.Log("Jogo carregado com progresso: " + dados.fasesCompletadas + " fases, " + dados.vidas + " vidas.");
             SceneManager.LoadScene("MenuFases");
         } else {
             Debug.Log("Nenhum jogo salvo encontrado");
         }
     }
 
+
     private void CarregarProgresso() {
         DadosDoJogo dados = SistemadeSave.pegardados();
         if (dados != null) {
             fasesCompletadas = dados.fasesCompletadas;
+            vidas = dados.vidas;
             progressoText.text = "Progresso: " + CalcularProgresso() + "%";
         } else {
             progressoText.text = "Nenhum jogo salvo";
@@ -130,16 +135,14 @@ public class MenuPrincipal : MonoBehaviour {
         return (int)((float)fasesCompletadas / totalDeFases * 100);
     }
 
-    public void LimparDados() {
+    private void LimparDados() {
         string path = Application.persistentDataPath + "/saveData.data";
         if (File.Exists(path)) {
             try {
                 File.Delete(path);
-                fasesCompletadas = 0;
                 PlayerPrefs.SetInt("FasesCompletadas", 0);
                 PlayerPrefs.Save();
                 Debug.Log("Dados limpos com sucesso");
-                progressoText.text = "Progresso: 0%";
             } catch (IOException e) {
                 Debug.LogError("Erro ao limpar dados: " + e.Message);
             }

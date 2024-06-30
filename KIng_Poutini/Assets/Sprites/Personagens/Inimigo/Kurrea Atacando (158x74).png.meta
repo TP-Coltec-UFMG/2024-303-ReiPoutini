@@ -1,0 +1,1051 @@
+fileFormatVersion: 2
+guid: 293ff366e21fe6443a12e780f4a3c1b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cebfc3f195bae844ada72cb5ae80f13
+      internalID: 1090431588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa54baee23318bb4e90baf55dd4f43c5
+      internalID: -426704469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a73eb1b1b1b1747a0a024d01e7b26e
+      internalID: 1202675014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_3
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5101a6f38cf4c044ea23e1b854a57aad
+      internalID: 1896978026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_4
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1607dd5130990ad4b85368b65ca7ed23
+      internalID: -1189564868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_5
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d7b44eb1a4b5641bbfa5bc2971c51e
+      internalID: -1585161178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_6
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307f719e7fd35244eb15134e4bf49694
+      internalID: 885962594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_7
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5ff232f873e9749b00c3ba27386760
+      internalID: 265866331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_8
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8c8eb2a8c75ee41882a1778730b5bc
+      internalID: -138514550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_9
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea45a760e1690e41acd22ee22211558
+      internalID: 657818827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_10
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b1618e45a359a4e82b6fdcc2150eff
+      internalID: 609262395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_11
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfb2e1541dd1f646925155b4a253d0c
+      internalID: 1596783371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_12
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b4837914655f54281eee10d1a79a47
+      internalID: 1186478808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_13
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51535c00eb16b3145b08671b397b377b
+      internalID: 119073485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_14
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03f50de1fafd714daa7d9629e5817e7
+      internalID: 1396970075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_15
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edaaa0cc2b60c44d85cab51f7263238
+      internalID: -651639366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_16
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb48cc22100997b409ab6d03053023bc
+      internalID: 350168494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_17
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7897f6c6b793e5e4c95731dd35a84816
+      internalID: -198500257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_18
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4ce7da12191184b8a195a117cf8e41
+      internalID: -998732925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_19
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3eb4f855933f4408fdc579c0ae6d75
+      internalID: 626152923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_20
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4813298de309b634d8d8efa0063d1b57
+      internalID: -1238439773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_21
+      rect:
+        serializedVersion: 2
+        x: 3318
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04c9740c4e469648a1735260d479638
+      internalID: -2071680618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_22
+      rect:
+        serializedVersion: 2
+        x: 3476
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aef0dec135405a49a53a3578633c0e4
+      internalID: 726172931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_23
+      rect:
+        serializedVersion: 2
+        x: 3634
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290afb1e376d38049bd5574568733684
+      internalID: 50445514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_24
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1176117a0b6d9d34180b866b7cc327a2
+      internalID: 1865828015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_25
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bcafacbdd2f654c833d9dadb89162c
+      internalID: -1229786850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_26
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615c4eb9aa87b47448fa1781a9f8d38e
+      internalID: -195349830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_27
+      rect:
+        serializedVersion: 2
+        x: 4266
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf155c15bfb41f478cce7413f8315c6
+      internalID: -965916532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_28
+      rect:
+        serializedVersion: 2
+        x: 4424
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df81d8ae18c87a44950b9677e85caf3
+      internalID: 2073035561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_29
+      rect:
+        serializedVersion: 2
+        x: 4582
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124c96b9d1c17a146ae47b7f7151d10c
+      internalID: -1349405751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_30
+      rect:
+        serializedVersion: 2
+        x: 4740
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21a7f71506c1ac46a0f0724ceda87f3
+      internalID: -2035392079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_31
+      rect:
+        serializedVersion: 2
+        x: 4898
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e2b72142a602642a47656382f9d7b4
+      internalID: 281007655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_32
+      rect:
+        serializedVersion: 2
+        x: 5056
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f974c6591dd135347965ad58c281a66f
+      internalID: 1852479941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_33
+      rect:
+        serializedVersion: 2
+        x: 5214
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b702f38b04bc849920296f08a13cf6
+      internalID: 346902431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_34
+      rect:
+        serializedVersion: 2
+        x: 5372
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d9ba33482b81b41b748021f5f70ebb
+      internalID: -1695195885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_35
+      rect:
+        serializedVersion: 2
+        x: 5530
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944d36d3691ad7a4b955aa6c7db46196
+      internalID: -627207045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_36
+      rect:
+        serializedVersion: 2
+        x: 5688
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5fc0015192b16489f19ce1cb90ed9f
+      internalID: -1234594906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_37
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea0244c358ae2f40ba2064dc51f2907
+      internalID: 1486217528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_38
+      rect:
+        serializedVersion: 2
+        x: 6004
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4f6a16f8aa51543a7ea1132d2dbb36
+      internalID: 310441166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_39
+      rect:
+        serializedVersion: 2
+        x: 6162
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11e93699eb9e194d81721fbb3383b24
+      internalID: -1713736702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_40
+      rect:
+        serializedVersion: 2
+        x: 6320
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011c28daefaec7946a9f87a56e698295
+      internalID: -883827242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Atacando (158x74)_41
+      rect:
+        serializedVersion: 2
+        x: 6478
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1461da4d57ef747a4e73389924ac41
+      internalID: 290313890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kurrea Atacando (158x74)_0: 1090431588
+      Kurrea Atacando (158x74)_1: -426704469
+      Kurrea Atacando (158x74)_10: 609262395
+      Kurrea Atacando (158x74)_11: 1596783371
+      Kurrea Atacando (158x74)_12: 1186478808
+      Kurrea Atacando (158x74)_13: 119073485
+      Kurrea Atacando (158x74)_14: 1396970075
+      Kurrea Atacando (158x74)_15: -651639366
+      Kurrea Atacando (158x74)_16: 350168494
+      Kurrea Atacando (158x74)_17: -198500257
+      Kurrea Atacando (158x74)_18: -998732925
+      Kurrea Atacando (158x74)_19: 626152923
+      Kurrea Atacando (158x74)_2: 1202675014
+      Kurrea Atacando (158x74)_20: -1238439773
+      Kurrea Atacando (158x74)_21: -2071680618
+      Kurrea Atacando (158x74)_22: 726172931
+      Kurrea Atacando (158x74)_23: 50445514
+      Kurrea Atacando (158x74)_24: 1865828015
+      Kurrea Atacando (158x74)_25: -1229786850
+      Kurrea Atacando (158x74)_26: -195349830
+      Kurrea Atacando (158x74)_27: -965916532
+      Kurrea Atacando (158x74)_28: 2073035561
+      Kurrea Atacando (158x74)_29: -1349405751
+      Kurrea Atacando (158x74)_3: 1896978026
+      Kurrea Atacando (158x74)_30: -2035392079
+      Kurrea Atacando (158x74)_31: 281007655
+      Kurrea Atacando (158x74)_32: 1852479941
+      Kurrea Atacando (158x74)_33: 346902431
+      Kurrea Atacando (158x74)_34: -1695195885
+      Kurrea Atacando (158x74)_35: -627207045
+      Kurrea Atacando (158x74)_36: -1234594906
+      Kurrea Atacando (158x74)_37: 1486217528
+      Kurrea Atacando (158x74)_38: 310441166
+      Kurrea Atacando (158x74)_39: -1713736702
+      Kurrea Atacando (158x74)_4: -1189564868
+      Kurrea Atacando (158x74)_40: -883827242
+      Kurrea Atacando (158x74)_41: 290313890
+      Kurrea Atacando (158x74)_5: -1585161178
+      Kurrea Atacando (158x74)_6: 885962594
+      Kurrea Atacando (158x74)_7: 265866331
+      Kurrea Atacando (158x74)_8: -138514550
+      Kurrea Atacando (158x74)_9: 657818827
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,9 +12,9 @@ public class Ataque : MonoBehaviour {
 
     void Update(){
         if(Jogador.horizontalInput < 0){
-            AtaqueColisao.offset = new Vector2(-1.2f, -0.2f);
+            AtaqueColisao.offset = new Vector2(-1.45f, -0.3f);
         }else if(Jogador.horizontalInput > 0){
-            AtaqueColisao.offset = new Vector2(-0.3f, -0.2f);
+            AtaqueColisao.offset = new Vector2(-0.3f, -0.3f);
         }
     }
 }

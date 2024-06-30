@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
 public class Jogador : MonoBehaviour {
     // Outros Scripts acessam as funções e variáveis públicas
     public static Jogador player { get; private set; }
 
+
     // Movimentação
     [SerializeField] private float velocidadeInicial = 5f;
     [SerializeField] private float velocidadeCorrendo = 10f;
-    [SerializeField] private float forca = 600f;
+    [SerializeField] private float forca = 6f;
     [SerializeField] private Transform peDoPersonagem;
     [SerializeField] private LayerMask Chao;
     [SerializeField] private float incrementoVelocidade = 2.0f;
@@ -23,6 +26,8 @@ public class Jogador : MonoBehaviour {
     private BoxCollider2D jogadorCollider;
     [SerializeField] private bool Ataque;
     public bool AtaqueDuplo, AtaqueTriplo, AtaqueQuadruplo, LockeAtaque = false;
+    public bool EmAtaque = false;
+    public event Action OnPlayerJump;
 
     private int andandoHash = Animator.StringToHash("andando");
     private int saltandoHash = Animator.StringToHash("saltando");
@@ -38,13 +43,18 @@ public class Jogador : MonoBehaviour {
     private float velocidadeAtual;
     private bool invencivel = false;
     private int camadaOriginal;
+    public int vidas = 6;
+    public int fasesCompletadas = 0;
+    private Vector2 swapV;
 
+    
     private void Awake() {
         if (player == null) {
             player = this;
         } else {
             Destroy(gameObject);
         }
+        CarregarProgresso();
 
         rb = GetComponent<Rigidbody2D>();
         animador = GetComponent<Animator>();
@@ -59,29 +69,36 @@ public class Jogador : MonoBehaviour {
 
         // Só ocorre se não foi bloquado
         if (!BlockInput) {
-            //Anda
-            horizontalInput = Input.GetAxis("Horizontal");
 
-            //Pula
-            if (Input.GetKeyDown(KeyCode.UpArrow) && estaChao && Ataque == false) {
-                rb.AddForce(Vector2.up * forca);
+            if(EmAtaque == false){
+                //Anda
+                horizontalInput = Input.GetAxis("Horizontal");
+
+                //Pula
+                if (Input.GetKeyDown(KeyCode.UpArrow) && estaChao && Ataque == false) {
+                    swapV = rb.velocity;
+                    swapV.y = forca;
+                    rb.velocity = swapV;
+                    OnPlayerJump?.Invoke();
+                }
             }
 
             //Ataque
             if(Input.GetKeyDown(KeyCode.A) && LockeAtaque == false){
                 Ataque = true;
-                if(estaChao){
+                EmAtaque = true;
+                if(estaChao && AtaqueDuplo == false && AtaqueTriplo == false && AtaqueQuadruplo == false){
                     animador.SetTrigger(ataqueHash1);
-                }else{
+                }else if(!estaChao){
                     animador.SetTrigger(ataquepuloHash);
                 }
-                if(AtaqueDuplo == true){
+                if(AtaqueDuplo == true && AtaqueTriplo == false && AtaqueQuadruplo == false){
                     animador.SetTrigger(ataqueHash2);
                 }
-                if(AtaqueTriplo == true){
+                if(AtaqueTriplo == true && AtaqueDuplo == false && AtaqueQuadruplo == false){
                     animador.SetTrigger(ataqueHash3);
                 }
-                if(AtaqueQuadruplo == true){
+                if(AtaqueQuadruplo == true && AtaqueDuplo == false && AtaqueTriplo == false){
                     animador.SetTrigger(ataqueHash4);
                 }
             }
@@ -90,7 +107,7 @@ public class Jogador : MonoBehaviour {
                 horizontalInput = 0;
             }
 
-            estaChao = Physics2D.OverlapCircle(peDoPersonagem.position, 0.2f, Chao);
+            estaChao = Physics2D.OverlapCircle(peDoPersonagem.position, 0.5f, Chao);
 
             animador.SetBool(andandoHash, horizontalInput != 0);
             animador.SetBool(saltandoHash, !estaChao);
@@ -122,21 +139,25 @@ public class Jogador : MonoBehaviour {
 
     void AcabaAtaqueSimples(){
         Ataque = false;
+        EmAtaque = false;
     }
 
     void AcabaAtaqueDuplo(){
         AtaqueDuplo = false;
         Ataque = false;
+        EmAtaque = false;
     }
 
     void AcabaAtaqueTriplo(){
         AtaqueTriplo = false;
         Ataque = false;
+        EmAtaque = false;
     }
 
     void AcabaAtaqueQuadruplo(){
         AtaqueQuadruplo = false;
         Ataque = false;
+        EmAtaque = false;
     }
 
     public IEnumerator Sofrendo() {
@@ -157,10 +178,23 @@ public class Jogador : MonoBehaviour {
     }
 
     public void Morte() {
-        Destroy(gameObject);
-        BlockInput = true;
-        velocidadeInicial = 0;
-        GetComponent<Collider2D>().enabled = false;
+    vidas--;
+        if (vidas <= 0) {
+            Debug.Log("Game Over");
+            Destroy(gameObject);
+            BlockInput = true;
+            velocidadeInicial = 0;
+            GetComponent<Collider2D>().enabled = false;
+        } else {
+            SalvarProgresso();
+            Reviver();
+        }
+        HUDControl.HControl.AtualizarVidas();
+    }
+
+    public void Reviver(){
+        transform.position = GameManager.Instance.GetCheckpointPosition();
+        HUDControl.HControl.RestauraVida();
     }
 
     public void AtivarInvencibilidade(float duracao) {
@@ -179,5 +213,18 @@ public class Jogador : MonoBehaviour {
 
     public bool EstaInvencivel() {
         return invencivel;
+    }
+
+    private void SalvarProgresso() {
+        DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidas);
+        SistemadeSave.SalvarDados(dados);
+    }
+    
+    private void CarregarProgresso() {
+        DadosDoJogo dados = SistemadeSave.pegardados();
+        if (dados != null) {
+            vidas = dados.vidas;
+            fasesCompletadas = dados.fasesCompletadas;
+        }
     }
 }

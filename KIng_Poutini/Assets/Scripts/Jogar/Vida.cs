@@ -39,7 +39,12 @@ public class Vida : MonoBehaviour {
         }
 
         if (colisao.CompareTag("Mauri")) {
-            jogador.AtivarInvencibilidade(10.0f); //10 segundos de invencibilidade
+            jogador.AtivarInvencibilidade(10.0f);
+            Destroy(colisao.gameObject);
+        }
+
+        if(colisao.CompareTag("Coracao")){
+            HControl.AumentarVidas();
             Destroy(colisao.gameObject);
         }
     }

@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 837e01501bfec174ea25cf1772e6516b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6192731fe4d53064bae2721e89d663ed
+      internalID: 327138407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e670ac55bef2245b7acea69191c9c7
+      internalID: 1213919965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceca8220bce99a418bd00d87927bc16
+      internalID: 474002037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_3
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c0d008a2bbc904f9fc66de25116d0d
+      internalID: 376656841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_4
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ee2811d7345c24498f5c6a0bea1a74
+      internalID: 1821962113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_5
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29485225d2130474b9326a634a3aa8c8
+      internalID: -626250972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_6
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cdb9e3eb06b874a93954cad8fa5d16
+      internalID: -1359823803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_7
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ed5d9451cf1c544982445da6f5ebf7
+      internalID: 1794862882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_8
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38344e4ec2c3a664c9aa11a75d4f01b3
+      internalID: 1649383458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_9
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd09d6ef6875ffa4c80be7ec1f690073
+      internalID: -267848252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_10
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef0621bf1db7f643ac014a503ff1f21
+      internalID: -1219647456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_11
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31b4c57183047744b894b7fe01b7764
+      internalID: -1997992439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_12
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0810c24bdf343dd479e1ffed1fe42d16
+      internalID: 650474759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_13
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584adf92f2790e945bbd4ddde9bf00ed
+      internalID: 447172057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_14
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfca80a2d453c54ba9c1dcaee5c4c9a
+      internalID: 385320322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_15
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4467abaf46dcb0e4384edd918066d284
+      internalID: -1093459777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_16
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28719329f8c202c4b9cc0a96ee2ca830
+      internalID: 865177964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_17
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd266a3e26aa3c4419b9105afb596d93
+      internalID: 1390197827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_18
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e0723e995b11547b59dcd1c78cf324
+      internalID: 1653517144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kurrea Morrendo (158x74)_19
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 2
+        width: 158
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d47c81bd0792646a381ef95e544a4c
+      internalID: -1969430589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kurrea Morrendo (158x74)_0: 327138407
+      Kurrea Morrendo (158x74)_1: 1213919965
+      Kurrea Morrendo (158x74)_10: -1219647456
+      Kurrea Morrendo (158x74)_11: -1997992439
+      Kurrea Morrendo (158x74)_12: 650474759
+      Kurrea Morrendo (158x74)_13: 447172057
+      Kurrea Morrendo (158x74)_14: 385320322
+      Kurrea Morrendo (158x74)_15: -1093459777
+      Kurrea Morrendo (158x74)_16: 865177964
+      Kurrea Morrendo (158x74)_17: 1390197827
+      Kurrea Morrendo (158x74)_18: 1653517144
+      Kurrea Morrendo (158x74)_19: -1969430589
+      Kurrea Morrendo (158x74)_2: 474002037
+      Kurrea Morrendo (158x74)_3: 376656841
+      Kurrea Morrendo (158x74)_4: 1821962113
+      Kurrea Morrendo (158x74)_5: -626250972
+      Kurrea Morrendo (158x74)_6: -1359823803
+      Kurrea Morrendo (158x74)_7: 1794862882
+      Kurrea Morrendo (158x74)_8: 1649383458
+      Kurrea Morrendo (158x74)_9: -267848252
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
