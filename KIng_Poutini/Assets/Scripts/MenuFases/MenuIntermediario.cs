@@ -1,3 +1,4 @@
+
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +7,8 @@ using UnityEngine.Events;
 
 public class MenuIntermediario : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI nomeFaseText;
-    [SerializeField] private Image ilhaImage;
-    [SerializeField] private Image colecionavelImage;
+    [SerializeField] private GameObject ilhaImage;
+    [SerializeField] private GameObject colecionavelImage;
     [SerializeField] private GameObject Selecao;
     public Button botaoJogar;
     public Button botaoVoltar;
@@ -16,22 +17,31 @@ public class MenuIntermediario : MonoBehaviour {
     private Button[] botoes;
 
     private Animator colecionavelAnimator;
-    private static readonly int AtivarRotacao = Animator.StringToHash("Ativarotacao");
+    private Animator IlhaAnimation;
+    private int AtivarRotacao = Animator.StringToHash("Ativarotacao");
 
     private void Awake() {
         colecionavelAnimator = colecionavelImage.GetComponent<Animator>();
+        IlhaAnimation = ilhaImage.GetComponent<Animator>();
     }
 
-    public void ConfigurarMenu(string nomeFase, Sprite spriteIlha, bool colecionavelPego, Sprite spriteColecionavel, UnityAction jogarCallback, UnityAction voltarCallback) {
+    public void ConfigurarMenu(string nomeFase, GameObject spriteIlha, bool colecionavelPego, GameObject colecionavelObj, UnityAction jogarCallback, UnityAction voltarCallback) {
         nomeFaseText.text = nomeFase;
-        ilhaImage.sprite = spriteIlha;
-        
+        spriteIlha.SetActive(true);
+        IlhaAnimation = spriteIlha.GetComponent<Animator>();
+       
         if (colecionavelPego) {
-            colecionavelImage.sprite = spriteColecionavel;
-            colecionavelAnimator.SetTrigger(AtivarRotacao);
+            colecionavelObj.SetActive(true);
+            colecionavelAnimator = colecionavelObj.GetComponent<Animator>();
+            if (colecionavelAnimator != null) {
+                colecionavelAnimator.SetTrigger(AtivarRotacao);
+            }
+            if (colecionavelAnimator == null){
+            }
         } else {
-            colecionavelImage.sprite = null;
-            colecionavelAnimator.ResetTrigger(AtivarRotacao);
+            if (colecionavelAnimator != null) {
+            }
+            colecionavelObj.SetActive(false);
         }
 
         botaoJogar.onClick.RemoveAllListeners();
@@ -39,11 +49,10 @@ public class MenuIntermediario : MonoBehaviour {
 
         botaoJogar.onClick.AddListener(jogarCallback);
         botaoVoltar.onClick.AddListener(voltarCallback);
-        
+       
         botoes = new Button[] { botaoJogar, botaoVoltar };
         SelectButton(botaoAtual);
     }
-
 
     private void Update() {
         if (gameObject.activeSelf) {

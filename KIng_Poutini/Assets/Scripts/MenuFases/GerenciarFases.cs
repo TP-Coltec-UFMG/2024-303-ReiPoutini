@@ -13,8 +13,14 @@ public class GerenciarFases : MonoBehaviour {
     [SerializeField] private GameObject personagem;
     [SerializeField] private float velocidadeMovimento = 2f;
     [SerializeField] private MenuIntermediario[] menusIntermediarios;
-    [SerializeField] private List<Sprite> spritesColecionaveis;
+    [SerializeField] private List<GameObject> colecionaveis;
+    [SerializeField] private List<GameObject> Ilhas;
+    [SerializeField] private GameObject Ilha4;
 
+    [SerializeField] private SceneLoader sceneLoader;
+    [SerializeField] private GameObject painel_carregando;
+
+    private Animator ilha4;
     private Animator animador;
     private SpriteRenderer spriteRenderer;
     public int faseAtual = 0;
@@ -46,10 +52,11 @@ public class GerenciarFases : MonoBehaviour {
     void Awake() {
         animador = personagem.GetComponent<Animator>();
         spriteRenderer = personagem.GetComponent<SpriteRenderer>();
+        ilha4 = Ilha4.GetComponent<Animator>();
     }
 
     void Update() {
-        if (!menuIntermediarioAtivo && !inputLocked) {
+        if (!menuIntermediarioAtivo && !inputLocked && !isMoving) {
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
                 MoverParaFase(faseAtual + 1);
             } else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
@@ -99,15 +106,16 @@ public class GerenciarFases : MonoBehaviour {
         }
 
         faseAtual = Mathf.Max(numFase - 1, faseAtual);
-  
-        if (numFase >= spritesCompletos.Count || numFase >= spritesColecionaveis.Count) {
+ 
+        if (numFase >= spritesCompletos.Count || numFase >= colecionaveis.Count) {
             Debug.LogError("Índice numFase fora dos limites para sprites: " + numFase);
             return;
         }
 
         bool colecionavelPego = colecionaveisColetados[numFase + 1];
-        menusIntermediarios[faseAtual].ConfigurarMenu("Fase " + (numFase + 1), spritesCompletos[numFase], colecionavelPego, spritesColecionaveis[numFase], () => CarregarFase(numFase + 1), FecharMenuIntermediario);
-        Debug.Log("Colecionavel:");
+        GameObject colecionavelObj = colecionaveis[numFase];
+        GameObject Ilha = Ilhas[numFase];
+        menusIntermediarios[faseAtual].ConfigurarMenu("Fase " + (numFase + 1), Ilha, colecionavelPego, colecionavelObj, () => CarregarFase(numFase + 1), FecharMenuIntermediario);
         menusIntermediarios[faseAtual].Mostrar();
         DesativarSelecaoFases();
         menuIntermediarioAtivo = true;
@@ -135,7 +143,8 @@ public class GerenciarFases : MonoBehaviour {
 
         faseAtual = Mathf.Max(numFase - 1, faseAtual);
         SalvarFase(faseAtual + 1);
-        SceneManager.LoadScene("Fase" + numFase);
+        painel_carregando.SetActive(true);
+        sceneLoader.LoadScene("Fase" + numFase);
     }
 
     public void AtualizarBotoesFase() {
@@ -143,6 +152,10 @@ public class GerenciarFases : MonoBehaviour {
             bool isCompleto = i < fasesCompletadas;
             botaoFase[i].interactable = isCompleto;
             botaoFase[i].GetComponent<Image>().sprite = isCompleto ? spritesCompletos[i] : spritesIncompletos[i];
+
+            if(botaoFase[3].interactable = isCompleto){
+                ilha4.SetTrigger("Desbloqueado");
+            }
         }
     }
 
@@ -157,7 +170,7 @@ public class GerenciarFases : MonoBehaviour {
             fasesCompletadas = dados.fasesCompletadas;
             vidas = dados.vidas;
             colecionaveisColetados = dados.colecionaveisColetados;
-            
+           
             if (colecionaveisColetados.Count < botaoFase.Length) {
                 colecionaveisColetados.AddRange(new bool[botaoFase.Length - colecionaveisColetados.Count]);
             }

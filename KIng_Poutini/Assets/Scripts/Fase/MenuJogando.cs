@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using BrewedInk.CRT;
 
 public class MenuJogando : MonoBehaviour {
 
@@ -18,6 +19,7 @@ public class MenuJogando : MonoBehaviour {
     void Awake() {
         Botoes = Botoes_pause;
         SelectButton(BotaoAtual);
+        ConfigMenu.Instance.AplicarConfiguracoes();
     }
 
     void Update() {

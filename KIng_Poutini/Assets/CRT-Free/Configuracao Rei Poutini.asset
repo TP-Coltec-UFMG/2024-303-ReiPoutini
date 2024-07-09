@@ -22,15 +22,15 @@ MonoBehaviour:
     dithering4: 0
     dithering8: 0
     vignette: 0.422
-    innerCurve: 20
-    monitorCurve: 0.017
+    innerCurve: 11
+    monitorCurve: 0.045
     monitorInnerSize:
       width: 0
       height: 0
     monitorOutterSize:
       width: 0.054
       height: 0.037
-    zoom: 1.23
+    zoom: 1.17
     monitorRoundness: 0.2
     monitorTexture: {fileID: 0}
     monitorColor: {r: 0, g: 0, b: 0, a: 1}
@@ -42,4 +42,4 @@ MonoBehaviour:
       sizeMultiplier: 1.03
     innerMonitorShineRadius: -0.087
     innerMonitorShineCurve: 10
-  validationId: 7e8fa151-249b-4090-80c6-56c77902c883
+  validationId: 5a2a50a8-d142-4506-b585-653a1a826489

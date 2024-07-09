@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7932314127142370358}
   m_Layer: 0
-  m_Name: PontoB
+  m_Name: PontoA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 84741352313401575}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 12, y: 0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1178969017785380473}
   m_Layer: 0
-  m_Name: PontoA
+  m_Name: PontoB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 6166209307071790201}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.030001, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 8171163610307917882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.16, y: -2, z: 0}
+  m_LocalPosition: {x: -13.01, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 5205712893645460956}
   m_Layer: 7
   m_Name: Coelho
-  m_TagString: Untagged
+  m_TagString: Corpicho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 8837095163910718520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.629999, y: -2.35, z: 0}
+  m_LocalPosition: {x: -12.629999, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -401,6 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6040697933963067692}
   sprites: {fileID: 0}
+  OBJETO: {fileID: 3359309577357767181}
   vida: 10
   velocidade: 5
   pontoA: {fileID: 7932314127142370358}

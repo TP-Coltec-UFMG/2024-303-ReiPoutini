@@ -7,6 +7,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using TMPro;
 using System.Linq;
+using BrewedInk.CRT;
 
 public class MenuPrincipal : MonoBehaviour {
     
@@ -14,10 +15,13 @@ public class MenuPrincipal : MonoBehaviour {
     [SerializeField] private GameObject painel_menu;
     [SerializeField] private GameObject painel_opcoes;
     [SerializeField] private GameObject painel_jogar;
+    [SerializeField] private GameObject painel_carregando;
     [SerializeField] private TextMeshProUGUI progressoText;
     [SerializeField] private List<Selectable> Botoes_menu;
     [SerializeField] private List<Selectable> Botoes_opcoes;
     [SerializeField] private List<Selectable> Botoes_jogar;
+
+    [SerializeField] private SceneLoader sceneLoader;
     
     [SerializeField] private int totalDeFases = 16;
     private int vidasIniciais = 6;
@@ -26,12 +30,12 @@ public class MenuPrincipal : MonoBehaviour {
     private List<Selectable> Botoes;
     private int fasesCompletadas = 1;
     private int vidas = 6;
-    
 
     private void Awake() {
         Botoes = Botoes_menu;
         SelectButton(BotaoAtual);
         CarregarProgresso();
+        ConfigMenu.Instance.AplicarConfiguracoes();
     }
 
     private void Update() {
@@ -112,17 +116,18 @@ public class MenuPrincipal : MonoBehaviour {
         DadosDoJogo dados = new DadosDoJogo(fasesCompletadas, vidasIniciais, colecionaveis);
         Debug.Log("Fases completadas: " + dados.fasesCompletadas);
         SistemadeSave.SalvarDados(dados);
+        painel_carregando.SetActive(true);
 
-        SceneManager.LoadScene("Fase1");
+        sceneLoader.LoadScene("Fase1");
     }
-
 
     public void CarregarJogo() {
         DadosDoJogo dados = SistemadeSave.pegardados();
         if (dados != null) {
             PlayerPrefs.SetInt("FasesCompletadas", dados.fasesCompletadas);
             Debug.Log("Jogo carregado com progresso: " + dados.fasesCompletadas + " fases, " + dados.vidas + " vidas.");
-            SceneManager.LoadScene("MenuFases");
+            painel_carregando.SetActive(true);
+            sceneLoader.LoadScene("MenuFases");
         } else {
             Debug.Log("Nenhum jogo salvo encontrado");
         }
@@ -143,8 +148,8 @@ public class MenuPrincipal : MonoBehaviour {
     private int CalcularProgresso() {
         DadosDoJogo dados = SistemadeSave.pegardados();
         if (dados != null) {
-            int totalColecionaveis = 12; // Ajuste conforme necessário
-            int coletados = dados.colecionaveisColetados.Count(c => c); // Conta o número de verdadeiros
+            int totalColecionaveis = 12;
+            int coletados = dados.colecionaveisColetados.Count(c => c);
             return (int)((float)(fasesCompletadas + coletados) / (totalDeFases + totalColecionaveis) * 100);
         } else {
             return 0;
@@ -155,16 +160,15 @@ public class MenuPrincipal : MonoBehaviour {
         string path = Application.persistentDataPath + "/save.dat";
         if (File.Exists(path)) {
             try {
-                File.Delete(path); // Deleta o arquivo de dados salvo
+                File.Delete(path);
                 PlayerPrefs.SetInt("FasesCompletadas", 0);
-                PlayerPrefs.Save(); // Salva as mudanças no PlayerPrefs
+                PlayerPrefs.Save();
                 PlayerPrefs.SetInt("FaseAtual", 1);
-                PlayerPrefs.Save(); // Salvar as mudanças feitas nos PlayerPrefs
+                PlayerPrefs.Save(); 
                 Debug.Log("Dados limpos com sucesso");
             } catch (IOException e) {
                 Debug.Log("Erro ao limpar dados");
             }
         }
     }
-
 }

@@ -88,6 +88,12 @@ public class HUDControl : MonoBehaviour {
         StartCoroutine(DamageHUD());
     }
 
+    public void TocouNaAgua(){
+        vida = 0;
+        AtualizarVida();
+        Morto();
+    }
+
     private IEnumerator DamageHUD() {
         yield return new WaitForSeconds(0.1f);
     }

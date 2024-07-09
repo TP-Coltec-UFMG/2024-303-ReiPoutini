@@ -1,0 +1,994 @@
+fileFormatVersion: 2
+guid: 8f76256f0ccd82d429ee909ca4304e26
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agua (260x88)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b512f30d1e6e0e14c8ed51ca54bca702
+      internalID: 759617575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f268374750d7bda4e82245df70df6d7a
+      internalID: -235105369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79086e1c7d11d44b902cc799c385c72
+      internalID: 1542385915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5bf5cb272427a429d98c81ad416f39
+      internalID: 1928513109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_4
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71917a60806cc12448496bdd625232a7
+      internalID: -1975693119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_5
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d13631b80203b40b7f1b070c6c1bef
+      internalID: -1852168625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_6
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c0f61e008bf2b42ad4f1914b1bd790
+      internalID: -1682900392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_7
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc67e5e82b82d2047ac9e06993202504
+      internalID: 1893170475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_8
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9504c3e429c4ff4eaa08f419be4a681
+      internalID: -502816471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_9
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd89f647a13238e489087aac27e4e4fa
+      internalID: 1774879132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8787d70bcc8121640b2b1ce8ce519e1d
+      internalID: 1187814920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_11
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9652e8feea1e38c4cbd7e4a4768ab0c7
+      internalID: 629714368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_12
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e784a674297e24c8f6eb1d2c53c4ad
+      internalID: -964403529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_13
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a054bacf999cf7145b71f83b8d6f2a0e
+      internalID: 1252491194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_14
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fe862422687b047ae7c7e59736f0fa
+      internalID: 1189072421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_15
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790691cd8dcebed43963a538c3cd2f4e
+      internalID: -613309112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_16
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb09765d1a67534c80e481ff0012647
+      internalID: -1761115200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_17
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9765679ae19d788409b9f89f5ca66f12
+      internalID: -210389786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_18
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10f1bffd8dc55c4ea8dca7c334727ca
+      internalID: 414580126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_19
+      rect:
+        serializedVersion: 2
+        x: 4940
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eda2ec200b9584d9f890017bb607f3
+      internalID: -1257325421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_20
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a5b506857fcb4498bcfc64b54ef5ab
+      internalID: -1296608687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_21
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8724d0e23787b34cb52bbaac2c6d647
+      internalID: 1410229921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_22
+      rect:
+        serializedVersion: 2
+        x: 5720
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dd58de2483c9e42948ac4da9b61ebd
+      internalID: 1150031913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_23
+      rect:
+        serializedVersion: 2
+        x: 5980
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a06d27428f18a46bb91a8239a50f48
+      internalID: -646602381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_24
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56601913876679c45aae5494a51b4bf2
+      internalID: 1548570362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_25
+      rect:
+        serializedVersion: 2
+        x: 6500
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7417791fa6847094e9dc080c30ece574
+      internalID: -2091223612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_26
+      rect:
+        serializedVersion: 2
+        x: 6760
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6f84157ac4a7447b09e8386955e0f7
+      internalID: 937758281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_27
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7dc549bedcd7343a757f65f443b605
+      internalID: -153185452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_28
+      rect:
+        serializedVersion: 2
+        x: 7280
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d5e9fd5de75ee41a7373176acb2430
+      internalID: -1982093058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_29
+      rect:
+        serializedVersion: 2
+        x: 7540
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27201b0dd2f7bfb4ba2a99f316022e27
+      internalID: 1639690289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_30
+      rect:
+        serializedVersion: 2
+        x: 7800
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a64d154ea85564a92bf092cbc0a4b3
+      internalID: -1133117940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_31
+      rect:
+        serializedVersion: 2
+        x: 8060
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e6b39e6daebb54eb6ba1fb090f0651
+      internalID: 1733160956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_32
+      rect:
+        serializedVersion: 2
+        x: 8320
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d650bfe3ad123b4f8ca793b6bc0289b
+      internalID: 333175940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_33
+      rect:
+        serializedVersion: 2
+        x: 8580
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367f4831a3a269d419a522381afd6f9e
+      internalID: -1994882999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_34
+      rect:
+        serializedVersion: 2
+        x: 8840
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959b1ebcaa6301b4bb2a1ae2a978869f
+      internalID: -401536158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_35
+      rect:
+        serializedVersion: 2
+        x: 9100
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7d10ee6b6805f4f99f2b9f907441d8
+      internalID: -1944230721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_36
+      rect:
+        serializedVersion: 2
+        x: 9360
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89dc67fdf8e0d3479d4e19bad419d9c
+      internalID: -1736785437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_37
+      rect:
+        serializedVersion: 2
+        x: 9620
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d679d1107e4c1f540abbd3ef261f24ec
+      internalID: 1487617372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_38
+      rect:
+        serializedVersion: 2
+        x: 9880
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092436582b4ae5d4a96d3b67c9f3e515
+      internalID: 431216636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agua (260x88)_39
+      rect:
+        serializedVersion: 2
+        x: 10140
+        y: 0
+        width: 260
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c02d2e09bf08a4190cb49396f7c08b
+      internalID: 214296345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Agua (260x88)_0: 759617575
+      Agua (260x88)_1: -235105369
+      Agua (260x88)_10: 1187814920
+      Agua (260x88)_11: 629714368
+      Agua (260x88)_12: -964403529
+      Agua (260x88)_13: 1252491194
+      Agua (260x88)_14: 1189072421
+      Agua (260x88)_15: -613309112
+      Agua (260x88)_16: -1761115200
+      Agua (260x88)_17: -210389786
+      Agua (260x88)_18: 414580126
+      Agua (260x88)_19: -1257325421
+      Agua (260x88)_2: 1542385915
+      Agua (260x88)_20: -1296608687
+      Agua (260x88)_21: 1410229921
+      Agua (260x88)_22: 1150031913
+      Agua (260x88)_23: -646602381
+      Agua (260x88)_24: 1548570362
+      Agua (260x88)_25: -2091223612
+      Agua (260x88)_26: 937758281
+      Agua (260x88)_27: -153185452
+      Agua (260x88)_28: -1982093058
+      Agua (260x88)_29: 1639690289
+      Agua (260x88)_3: 1928513109
+      Agua (260x88)_30: -1133117940
+      Agua (260x88)_31: 1733160956
+      Agua (260x88)_32: 333175940
+      Agua (260x88)_33: -1994882999
+      Agua (260x88)_34: -401536158
+      Agua (260x88)_35: -1944230721
+      Agua (260x88)_36: -1736785437
+      Agua (260x88)_37: 1487617372
+      Agua (260x88)_38: 431216636
+      Agua (260x88)_39: 214296345
+      Agua (260x88)_4: -1975693119
+      Agua (260x88)_5: -1852168625
+      Agua (260x88)_6: -1682900392
+      Agua (260x88)_7: 1893170475
+      Agua (260x88)_8: -502816471
+      Agua (260x88)_9: 1774879132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

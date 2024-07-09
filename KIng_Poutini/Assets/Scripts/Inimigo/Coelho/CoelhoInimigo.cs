@@ -4,6 +4,7 @@ using UnityEngine;
 public class CoelhoInimigo : MonoBehaviour {
     public Animator anim;
     public SpriteRenderer sprites;
+    public GameObject OBJETO;
 
     [SerializeField] private int vida = 1;
     [SerializeField] private float velocidade = 5.0f;
@@ -40,11 +41,11 @@ public class CoelhoInimigo : MonoBehaviour {
 
     void AtualizarDirecaoEColisor() {
         if (destinoAtual == pontoA) {
-            sprites.flipX = true;
-            Ataque.offset = new Vector2(-0.1f, -0.15f);
-        } else {
             sprites.flipX = false;
             Ataque.offset = new Vector2(0.9f, -0.15f);
+        } else {
+            sprites.flipX = true;
+            Ataque.offset = new Vector2(-0.1f, -0.15f);
         }
     }
 
@@ -71,6 +72,7 @@ public class CoelhoInimigo : MonoBehaviour {
         DropItem();
 
         Destroy(gameObject, 2f);
+        Destroy(OBJETO, 2f);
     }
 
     private void DropItem() { 

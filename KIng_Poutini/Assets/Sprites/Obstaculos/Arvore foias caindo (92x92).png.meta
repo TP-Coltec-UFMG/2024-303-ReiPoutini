@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: 2698b59e890f9e04bad58923b9182283
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf34e27280a4ec478860b8395137cf4
+      internalID: -1112474821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51e06995c0e61c4e956d7043f3b4ea9
+      internalID: 902947545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbe2052faff485499e6a2a549991d75
+      internalID: -238920341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917f44f87b01d7043a69b1419362cbf3
+      internalID: 1367529452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afa67b4483b9ce4b94bdbaeccf6d586
+      internalID: 1543857359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_5
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159ccf00eb84efb40b039529d5634a4c
+      internalID: 1038336342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_6
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62a401cdade73f499ff975ee29944bd
+      internalID: -1465849783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_7
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1b12a1b3a3cf3499074fa083ef5ff7
+      internalID: -1383489004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_8
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d443cac110e7d44458ed26dc620d384d
+      internalID: 547748303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_9
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d623ac8d98502ef4ea2dafd40ab1757c
+      internalID: 860798710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_10
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7840f9cb16d2eb84da8dd66fa1cbaab4
+      internalID: -1447508919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_11
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1fec3ee3021aa4594ddf5520781a4c
+      internalID: 923663722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_12
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb3ed4bcf919234398aea43673b01cb
+      internalID: 67046701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_13
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb931415b7ed564fbe79c2d99fee794
+      internalID: -130019165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_14
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25061ab6c5f62c54e94373cd7ab79f3f
+      internalID: -1089403577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_15
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c886b3dc24f330f46944794c18ea147c
+      internalID: 1252433297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_16
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411ecd0076bd0214b94dbbc5d6395610
+      internalID: 1734289409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_17
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50446275f8aef8418460338e12362da
+      internalID: -163610132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_18
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc30a2f145a7f418a3e4cf3d6a2e2c
+      internalID: -1604398269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_19
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24ba1d091200db4384766a5c71f2eac
+      internalID: -609226997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_20
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa20aecb7b3059429ea5a818108af75
+      internalID: 10262045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_21
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a946e13a834242849baaf6c8f25f2c25
+      internalID: -111533520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_22
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467c9d94475dab742a2c5353ba5b9f3d
+      internalID: -1868374287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_23
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ad0eb38b56e054b8a1e87ece15ba2c
+      internalID: 95915857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_24
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b407880696ee442ac0285d1088f27e
+      internalID: -19616099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_25
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5195933db7fd9e644877eecf8566021d
+      internalID: -1759515786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_26
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5c0d7859cce064fb9bb6ca641598fd
+      internalID: 1328247721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_27
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59123e2bb6c2e344faec89e1ef0d349b
+      internalID: -1102200185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_28
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62104ee2b2f4b7428a86ead2b33eff4
+      internalID: 1559939809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_29
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6929307c286e2874782a9367472c8e8b
+      internalID: 722876187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_30
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1bc196317de9c4383faab3818af356
+      internalID: 1369658569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arvore foias caindo (92x92)_31
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 0
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5d0b4de02049b48a9f6fdf58b6d369
+      internalID: -1215040658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arvore foias caindo (92x92)_0: -1112474821
+      Arvore foias caindo (92x92)_1: 902947545
+      Arvore foias caindo (92x92)_10: -1447508919
+      Arvore foias caindo (92x92)_11: 923663722
+      Arvore foias caindo (92x92)_12: 67046701
+      Arvore foias caindo (92x92)_13: -130019165
+      Arvore foias caindo (92x92)_14: -1089403577
+      Arvore foias caindo (92x92)_15: 1252433297
+      Arvore foias caindo (92x92)_16: 1734289409
+      Arvore foias caindo (92x92)_17: -163610132
+      Arvore foias caindo (92x92)_18: -1604398269
+      Arvore foias caindo (92x92)_19: -609226997
+      Arvore foias caindo (92x92)_2: -238920341
+      Arvore foias caindo (92x92)_20: 10262045
+      Arvore foias caindo (92x92)_21: -111533520
+      Arvore foias caindo (92x92)_22: -1868374287
+      Arvore foias caindo (92x92)_23: 95915857
+      Arvore foias caindo (92x92)_24: -19616099
+      Arvore foias caindo (92x92)_25: -1759515786
+      Arvore foias caindo (92x92)_26: 1328247721
+      Arvore foias caindo (92x92)_27: -1102200185
+      Arvore foias caindo (92x92)_28: 1559939809
+      Arvore foias caindo (92x92)_29: 722876187
+      Arvore foias caindo (92x92)_3: 1367529452
+      Arvore foias caindo (92x92)_30: 1369658569
+      Arvore foias caindo (92x92)_31: -1215040658
+      Arvore foias caindo (92x92)_4: 1543857359
+      Arvore foias caindo (92x92)_5: 1038336342
+      Arvore foias caindo (92x92)_6: -1465849783
+      Arvore foias caindo (92x92)_7: -1383489004
+      Arvore foias caindo (92x92)_8: 547748303
+      Arvore foias caindo (92x92)_9: 860798710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

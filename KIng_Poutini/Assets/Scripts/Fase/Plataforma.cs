@@ -19,6 +19,11 @@ public class Plataforma : MonoBehaviour {
                 jogador.OnPlayerJump += DesativarCollider;
             }
         }
+
+
+        if (Input.GetKeyDown(KeyCode.DownArrow)) {
+            DesativarCollider();
+        }
     }
 
     private void OnDestroy() {
@@ -29,12 +34,10 @@ public class Plataforma : MonoBehaviour {
 
     private void DesativarCollider() {
         platformCollider.enabled = false;
-        Debug.Log("Colisor desativado");
         Invoke("ReativarCollider", TempoDesativado);
     }
 
     private void ReativarCollider() {
         platformCollider.enabled = true;
-        Debug.Log("Colisor reativado");
     }
 }
