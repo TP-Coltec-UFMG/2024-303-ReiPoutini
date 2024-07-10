@@ -189,25 +189,25 @@ public class Jogador : MonoBehaviour {
         BlockInput = true;
         animador.SetTrigger(MorteHash);
 
-        yield return new WaitUntil(() => animador.GetCurrentAnimatorStateInfo(0).IsName("Morto") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
+        yield return new WaitUntil(() => animador.GetCurrentAnimatorStateInfo(0).IsName("Morte") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
+
 
         vidas--;
         SalvarProgresso();
         HUDControl.HControl.AtualizarVidas();
 
         if (vidas <= 0) {
-            Debug.Log("Entrou no bloco Game Over.");
             velocidadeInicial = 0;
             GetComponent<Collider2D>().enabled = false;
             Destroy(gameObject);
             BlockInput = false;
         } else {
-            Debug.Log("Entrou no bloco Reviver.");
             Reviver();
         }
 
         BlockInput = false;
     }
+
 
 
     public void Reviver() {

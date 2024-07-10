@@ -133,7 +133,7 @@ public class GerenciarFases : MonoBehaviour {
 
     public void CarregarFase(int numFase) {
         if (numFase < 1 || numFase > botaoFase.Length) {
-            Debug.LogError("Índice numFase fora dos limites para carregamento: " + numFase);
+            Debug.LogError("indice numFase fora dos limites para carregamento: " + numFase);
             return;
         }
 
