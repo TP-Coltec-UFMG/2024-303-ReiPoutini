@@ -38,4 +38,13 @@ ____
 
 ### Jogabilidade
 
-Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss
+Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss, além de conter inimigos e power-ups exclusivos a eles.
+
+
+Menu de fases do primeiro arquipélago, da polinésia.
+
+
+Seção da fase 1 que serve como tutorial
+
+
+Seção da fase 2, em que o Tamahua entra em uma caverna
