@@ -38,14 +38,24 @@ ____
 
 ### Jogabilidade
 
-Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss, além de conter inimigos e power-ups exclusivos a eles.
+  Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss, além de conter inimigos e power-ups exclusivos a eles.
+As fases de plataforma possuem inimigos, obstáculos e poderes com que o jogador pode interagir.
 
 
-Menu de fases do primeiro arquipélago, da polinésia.
+Menu de fases do primeiro arquipélago (mitologia polinésia).
 ![Menu de Fases](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Menu%20Fases.png)
 
-Seção da fase 1 que serve como tutorial
+
+Seção da fase 1, que serve como tutorial
 ![Fase 1](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Fase%201.png)
+
 
 Seção da fase 2, em que o Tamahua entra em uma caverna
 ![Fase 2](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Fase%202.png)
+
+
+___
+
+### Design gráfico e Cutscenes
+O jogo utiliza sprites 2D pixelados, que foram produzidos em um espaço 3D por meio do Blender e editados por meio do Aseprite. Essa pipeline resulta em um estilo visual similar ao estilo de jogos antigos com sprites pré renderizados, como Donkey Kong Country. 
+As cutscenes ao longo do jogo foram animadas em 3D no Blender e são inspiradas nas cutscenes do Lego Batman, jogo muito nostálgico para nós 2.
