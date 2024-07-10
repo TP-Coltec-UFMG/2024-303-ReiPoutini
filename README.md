@@ -15,7 +15,7 @@ ___
 
   A tela inicial de nosso jogo é um menu simples, que possui o ambiente passando atrás em loop.
 
-Temos 3 opções de clicks:
+Temos 3 opções:
 
 - Jogar: começa o jogo (uau)
 - Opções: Mostra as opções
@@ -32,3 +32,10 @@ Temos 3 opções de clicks:
 - Filtro CRT: Botão ativação e desativação dos filtros
 
 ![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Captura%20de%20tela%202024-05-21%20232437.png)
+
+
+____
+
+### Jogabilidade
+
+Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss
