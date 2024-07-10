@@ -42,9 +42,10 @@ Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contend
 
 
 Menu de fases do primeiro arquipélago, da polinésia.
-
+![Menu de Fases](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Menu%20Fases.png)
 
 Seção da fase 1 que serve como tutorial
-
+![Fase 1](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Fase%201.png)
 
 Seção da fase 2, em que o Tamahua entra em uma caverna
+![Fase 2](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Fase%202.png)
