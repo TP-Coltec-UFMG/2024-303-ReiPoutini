@@ -36,6 +36,8 @@ public class Jogador : MonoBehaviour {
     private int ataqueHash4 = Animator.StringToHash("ataque4");
     private int ataquepuloHash = Animator.StringToHash("AtaqueAr");
     private int detectarHash = Animator.StringToHash("Detecta");
+    private int MorteHash = Animator.StringToHash("Morre");
+    private int NasceHash = Animator.StringToHash("Nasce");
 
     private bool BlockInput = false;
     private float tempoAndando = 0f;
@@ -63,73 +65,71 @@ public class Jogador : MonoBehaviour {
     }
 
     private void Update() {
-        if (Time.timeScale == 0f) return;
+        if (Time.timeScale == 0f || BlockInput) return;
 
-        if (!BlockInput) {
-            if (!EmAtaque) {
-                horizontalInput = Input.GetAxis("Horizontal");
+        if (!EmAtaque) {
+            horizontalInput = Input.GetAxis("Horizontal");
 
-                if (Input.GetKeyDown(KeyCode.UpArrow) && estaChao && !Ataque) {
-                    swapV = rb.velocity;
-                    swapV.y = forca;
-                    rb.velocity = swapV;
-                    OnPlayerJump?.Invoke();
-                }
+            if (Input.GetKeyDown(KeyCode.UpArrow) && estaChao && !Ataque) {
+                swapV = rb.velocity;
+                swapV.y = forca;
+                rb.velocity = swapV;
+                OnPlayerJump?.Invoke();
             }
+        }
 
-            if (Input.GetKeyDown(KeyCode.A) && !LockeAtaque) {
-                Ataque = true;
-                EmAtaque = true;
-                if (estaChao && !AtaqueDuplo && !AtaqueTriplo && !AtaqueQuadruplo) {
-                    animador.SetTrigger(ataqueHash1);
-                } else if (!estaChao) {
-                    animador.SetBool(ataquepuloHash, true);
-                } else if (AtaqueDuplo && !AtaqueTriplo && !AtaqueQuadruplo) {
-                    animador.SetTrigger(ataqueHash2);
-                } else if (AtaqueTriplo && !AtaqueDuplo && !AtaqueQuadruplo) {
-                    animador.SetTrigger(ataqueHash3);
-                } else if (AtaqueQuadruplo && !AtaqueDuplo && !AtaqueTriplo) {
-                    animador.SetTrigger(ataqueHash4);
-                }
+        if (Input.GetKeyDown(KeyCode.A) && !LockeAtaque) {
+            Ataque = true;
+            EmAtaque = true;
+            if (estaChao && !AtaqueDuplo && !AtaqueTriplo && !AtaqueQuadruplo) {
+                animador.SetTrigger(ataqueHash1);
+            } else if (!estaChao) {
+                animador.SetBool(ataquepuloHash, true);
+            } else if (AtaqueDuplo && !AtaqueTriplo && !AtaqueQuadruplo) {
+                animador.SetTrigger(ataqueHash2);
+            } else if (AtaqueTriplo && !AtaqueDuplo && !AtaqueQuadruplo) {
+                animador.SetTrigger(ataqueHash3);
+            } else if (AtaqueQuadruplo && !AtaqueDuplo && !AtaqueTriplo) {
+                animador.SetTrigger(ataqueHash4);
             }
+        }
 
-            if (Ataque && estaChao) {
-                horizontalInput = 0;
-            }
+        if (Ataque && estaChao) {
+            horizontalInput = 0;
+        }
 
-            estaChao = Physics2D.OverlapCircle(peDoPersonagem.position, 0.8f, Chao);
+        estaChao = Physics2D.OverlapCircle(peDoPersonagem.position, 0.8f, Chao);
 
-            animador.SetBool(andandoHash, horizontalInput != 0);
-            animador.SetBool(saltandoHash, !estaChao);
+        animador.SetBool(andandoHash, horizontalInput != 0);
+        animador.SetBool(saltandoHash, !estaChao);
 
-            if (horizontalInput != 0) {
-                tempoAndando += Time.deltaTime;
-                velocidadeAtual = Mathf.Min(velocidadeCorrendo, velocidadeAtual + incrementoVelocidade * Time.deltaTime);
-                animador.SetBool(correndoHash, velocidadeAtual >= velocidadeCorrendo);
-            } else {
-                tempoAndando = 0f;
-                velocidadeAtual = velocidadeInicial;
-                animador.SetBool(correndoHash, false);
-            }
+        if (horizontalInput != 0) {
+            tempoAndando += Time.deltaTime;
+            velocidadeAtual = Mathf.Min(velocidadeCorrendo, velocidadeAtual + incrementoVelocidade * Time.deltaTime);
+            animador.SetBool(correndoHash, velocidadeAtual >= velocidadeCorrendo);
+        } else {
+            tempoAndando = 0f;
+            velocidadeAtual = velocidadeInicial;
+            animador.SetBool(correndoHash, false);
+        }
 
-            if (horizontalInput > 0) {
-                spriteRenderer.flipX = false;
-                jogadorCollider.offset = new Vector2(-0.25f, -0.03f);
-                Detecta.offset = new Vector2(0.9f, -1.1f);
-            } else if (horizontalInput < 0) {
-                spriteRenderer.flipX = true;
-                jogadorCollider.offset = new Vector2(0.25f, -0.03f);
-                Detecta.offset = new Vector2(-0.9f, -1.1f);
-            }
+        if (horizontalInput > 0) {
+            spriteRenderer.flipX = false;
+            jogadorCollider.offset = new Vector2(-0.25f, -0.03f);
+            Detecta.offset = new Vector2(0.9f, -1.1f);
+        } else if (horizontalInput < 0) {
+            spriteRenderer.flipX = true;
+            jogadorCollider.offset = new Vector2(0.25f, -0.03f);
+            Detecta.offset = new Vector2(-0.9f, -1.1f);
+        }
 
-
-            if (animador.GetCurrentAnimatorStateInfo(0).IsName("GolpeAr") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f) {
-                if (DetectaInimigo.DetectarInimigo) {
-                    animador.SetTrigger(detectarHash);
-                }
+        if (animador.GetCurrentAnimatorStateInfo(0).IsName("GolpeAr") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f) {
+            if (DetectaInimigo.DetectarInimigo) {
+                animador.SetTrigger(detectarHash);
             }
         }
     }
+
 
     private void FixedUpdate() {
         rb.velocity = new Vector2(horizontalInput * velocidadeAtual, rb.velocity.y);
@@ -182,24 +182,49 @@ public class Jogador : MonoBehaviour {
     }
 
     public void Morte() {
-        vidas--;
-        if (vidas <= 0) {
-            Debug.Log("Game Over");
-            Destroy(gameObject);
-            BlockInput = true;
-            velocidadeInicial = 0;
-            GetComponent<Collider2D>().enabled = false;
-            SalvarProgresso();
-        } else {
-            SalvarProgresso();
-            Reviver();
-        }
-        HUDControl.HControl.AtualizarVidas();
+        StartCoroutine(HandleMorte());
     }
 
+    private IEnumerator HandleMorte() {
+        BlockInput = true;
+        animador.SetTrigger(MorteHash);
+
+        yield return new WaitUntil(() => animador.GetCurrentAnimatorStateInfo(0).IsName("Morto") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
+
+        vidas--;
+        SalvarProgresso();
+        HUDControl.HControl.AtualizarVidas();
+
+        if (vidas <= 0) {
+            Debug.Log("Entrou no bloco Game Over.");
+            velocidadeInicial = 0;
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject);
+            BlockInput = false;
+        } else {
+            Debug.Log("Entrou no bloco Reviver.");
+            Reviver();
+        }
+
+        BlockInput = false;
+    }
+
+
     public void Reviver() {
+        StartCoroutine(HandleReviver());
+
+        Debug.Log("check");
         transform.position = GameManager.Instance.GetCheckpointPosition();
         HUDControl.HControl.RestauraVida();
+
+        BlockInput = false;
+    }
+
+    private IEnumerator HandleReviver() {
+        BlockInput = true;
+        animador.SetTrigger(NasceHash);
+
+        yield return new WaitUntil(() => animador.GetCurrentAnimatorStateInfo(0).IsName("Nasce") && animador.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
     }
 
     public void AtivarInvencibilidade(float duracao) {

@@ -152,12 +152,13 @@ public class GerenciarFases : MonoBehaviour {
             bool isCompleto = i < fasesCompletadas;
             botaoFase[i].interactable = isCompleto;
             botaoFase[i].GetComponent<Image>().sprite = isCompleto ? spritesCompletos[i] : spritesIncompletos[i];
-
-            if(botaoFase[3].interactable = isCompleto){
-                ilha4.SetTrigger("Desbloqueado");
-            }
+        }
+        
+        if (botaoFase[3].GetComponent<Image>().sprite == spritesCompletos[3]) {
+            ilha4.SetTrigger("Desbloqueado");
         }
     }
+
 
     public void SalvarFase(int faseAtual) {
         PlayerPrefs.SetInt("FaseAtual", faseAtual);
