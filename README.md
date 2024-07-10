@@ -60,5 +60,11 @@ ___
   O jogo utiliza sprites 2D pixelados, que foram produzidos em um espaço 3D por meio do Blender e editados por meio do Aseprite. Essa pipeline resulta em um estilo visual similar ao estilo de jogos antigos com sprites pré renderizados, como Donkey Kong Country. 
   
   As cutscenes ao longo do jogo foram animadas em 3D no Blender e são inspiradas nas cutscenes do Lego Batman, jogo muito nostálgico para nós 2.
+
+
+Cena da primeira cutscene
 ![Cena da primeira cutscene](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Cutscene%20tutorial.png)
+
+
+Outra cena da primeira cutscene, sendo editada no Blender
 ![Outra cena da primeira cutscene, sendo editada no Blender](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Cutscene%20making%20of.png)
