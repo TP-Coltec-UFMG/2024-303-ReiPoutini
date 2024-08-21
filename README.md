@@ -38,10 +38,35 @@ Temos 3 opções:
 
 
 ____
+### Acessibilidade
+Alto Contraste: Serve para a melhor visualização do cenário para as pessoas com problema de visão:
+ - Azul: Jogador
+ - Vermelho: Inimigos/tudo que dá dano
+ - Rosa: Armadilha.
+ - Verde:Colecionáveis e Power Ups
+ - Cinza: todo o Cenário e o que não é relevante para o jogo.
+
+![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/acessibilidade%20-%20alto%20contraste.jpg)
+
+Legibilidade: Aumenta em 10% a FOnte que se Utiliza, além de mudar para uma fonte mais legível.
+
+![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/acessibilidade%20-%20legibilidade%20aumentada.jpg)
+
+Filtro de Daltonismo: FIltro de Daltonismo. Daltonicos podem jogar nosso jogo, uau.
+
+
+![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/acessibilidade%20-%20filtro%20daltonismo.jpg)
+  
 
 ### Jogabilidade
 
-  Os nívei do jogo serão divididos em 4 arquipélagos, cada arquipélago contendo 3 níveis de plataforma e 1 nível de boss, além de conter inimigos e power-ups exclusivos a eles.
+  Os níveis do jogo serão divididos em 3 arquipélagos com 3 Mitologias. Sendo elas a da Polinésia, Egípcia e Celta
+
+- Mitologia Polinésia: 3 níveis de plataforma e 1 nível de boss.
+- Mitologia Egípcia: 3 níveis de plataforma
+- Mitologia Celta: 1 nível de boss. 
+
+além de conter inimigos e power-ups exclusivos a eles.
 As fases de plataforma possuem inimigos, obstáculos e poderes com que o jogador pode interagir.
 
 
