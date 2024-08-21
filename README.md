@@ -34,7 +34,7 @@ Temos 3 opções:
 - Legibilidade: Botão de ativação da Legibilidade (Aumenta o tamanho da fonte e muda a fonte)
 - Daltonismo: Dropdown que muda ofiltro de daltonismo.
 
-![Tela de Opções](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Captura%20de%20tela%202024-05-21%20232437.png)
+![Tela de Opções]([https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Captura%20de%20tela%202024-05-21%20232437.png](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/menu%20opcoes.jpg))
 
 
 ____
