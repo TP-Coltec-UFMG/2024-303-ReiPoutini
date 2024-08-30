@@ -98,4 +98,4 @@ Outra cena da primeira cutscene, sendo editada no Blender
 ![Outra cena da primeira cutscene, sendo editada no Blender](https://github.com/TP-Coltec-UFMG/2024-303-ReiPoutini/blob/main/Cutscene%20making%20of.png)
 
 
-Para Jogar nosso jogo, baixe o Zip: https://drive.google.com/file/d/1CYnn4Gex4M4UHykuogM4Ut6t59PJl7Lq/view
+Para Jogar nosso jogo, baixe o Zip: https://drive.usercontent.google.com/download?id=1AKAY2rjwh8uoOPXfZG7CoaaSU1PcjQcn&export=download&authuser=0
